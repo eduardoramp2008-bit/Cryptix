@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptix Antivirus - Protección de Próxima Generación</title>
+    <!-- Carga de Tailwind CSS para diseño moderno inmediato -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#070b19',
+                            card: '#0e172e',
+                            cyan: '#00d8f6',
+                            green: '#22c55e',
+                            border: '#1e293b'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-brand-dark text-slate-100 font-sans antialiased">
+
+    <!-- Navegación -->
+    <nav class="flex justify-between items-center px-8 py-5 border-b border-brand-border bg-brand-dark/80 backdrop-blur sticky top-0 z-50">
+        <div class="flex items-center space-x-3">
+            <div class="flex items-center space-x-3">
+    <a href="#">
+        <img src="./cryptix.png" alt="Cryptix Antivirus" class="h-[70px] w-auto object-contain">
+    </a>
+</div>
+        </div>
+        <div class="space-x-6 text-sm text-slate-300 hidden md:flex items-center">
+            <a href="#inicio" class="hover:text-brand-cyan transition">Inicio</a>
+            <a href="#caracteristicas" class="hover:text-brand-cyan transition">Características</a>
+            <a href="#simulador" class="hover:text-brand-cyan transition">Simulador</a>
+            <a href="#modelo" class="hover:text-brand-cyan transition">Modelo de Negocio</a>
+            <button class="bg-brand-cyan hover:bg-cyan-400 text-brand-dark font-semibold px-4 py-2 rounded-lg transition">Descargar MVP</button>
+        </div>
+    </nav>
+
+    <!-- Sección Principal / Hero -->
+    <section id="inicio" class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <span class="inline-block bg-brand-cyan/10 text-brand-cyan text-xs font-semibold px-4 py-1.5 rounded-full border border-brand-cyan/30 mb-6 uppercase tracking-wider">
+            Protección EDR Ultraligera
+        </span>
+        <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+            Seguridad inteligente para tus equipos <br>
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-cyan to-blue-500">sin impactar el rendimiento</span>.
+        </h1>
+        <p class="text-lg text-slate-400 max-w-2xl mx-auto mb-10">
+            Cryptix combina firmas de detección continua con un motor heurístico de bajo consumo, garantizando tranquilidad total en cada proceso.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#simulador" class="bg-brand-cyan hover:bg-cyan-400 text-brand-dark font-bold px-6 py-3 rounded-xl transition shadow-lg shadow-brand-cyan/20">
+                Probar Simulador
+            </a>
+            <a href="#modelo" class="bg-brand-card hover:bg-slate-800 text-slate-200 font-semibold px-6 py-3 rounded-xl border border-brand-border transition">
+                Ver Propuesta de Valor
+            </a>
+        </div>
+    </section>
+
+    <!-- Simulador Interactivo de Escaneo -->
+    <section id="simulador" class="max-w-4xl mx-auto px-6 py-12">
+        <div class="bg-brand-card border border-brand-border rounded-2xl p-8 shadow-2xl relative overflow-hidden">
+            <div class="flex justify-between items-center mb-6">
+                <div>
+                    <h2 class="text-xl font-bold text-white">Simulador de Estado del Sistema</h2>
+                    <p class="text-xs text-slate-400">Prueba cómo responde el análisis en tiempo real de Cryptix</p>
+                </div>
+                <span id="scan-status" class="bg-brand-green/10 text-brand-green text-xs px-3 py-1 rounded-full border border-brand-green/30 font-medium">
+                    Sistema Protegido
+                </span>
+            </div>
+
+            <!-- Barra de Progreso -->
+            <div class="bg-slate-900 rounded-full h-4 mb-6 overflow-hidden border border-brand-border p-0.5">
+                <div id="progress-bar" class="bg-gradient-to-r from-brand-cyan to-brand-green h-full rounded-full w-0 transition-all duration-300"></div>
+            </div>
+
+            <!-- Telemetría -->
+            <div class="grid grid-cols-3 gap-4 text-center mb-6">
+                <div class="bg-slate-900/60 p-3 rounded-lg border border-brand-border">
+                    <span class="block text-xs text-slate-400">Archivos Analizados</span>
+                    <span id="files-count" class="text-lg font-bold text-slate-200">0</span>
+                </div>
+                <div class="bg-slate-900/60 p-3 rounded-lg border border-brand-border">
+                    <span class="block text-xs text-slate-400">Amenazas</span>
+                    <span id="threats-count" class="text-lg font-bold text-brand-green">0</span>
+                </div>
+                <div class="bg-slate-900/60 p-3 rounded-lg border border-brand-border">
+                    <span class="block text-xs text-slate-400">Uso de RAM</span>
+                    <span class="text-lg font-bold text-brand-cyan">&lt; 1.2%</span>
+                </div>
+            </div>
+
+            <button id="start-btn" onclick="runScan()" class="w-full bg-brand-cyan hover:bg-cyan-400 text-brand-dark font-bold py-3 rounded-xl transition">
+                Iniciar Escaneo Simulado
+            </button>
+        </div>
+    </section>
+
+    <!-- Características Técnicas -->
+    <section id="caracteristicas" class="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-3 gap-8">
+        <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+            <div class="text-brand-cyan text-3xl mb-4">🛡️</div>
+            <h3 class="font-bold text-lg text-white mb-2">Motor Híbrido Avanzado</h3>
+            <p class="text-slate-400 text-sm">Integración estratégica con firmas abiertas para detección inmediata de hashes conocidos.</p>
+        </div>
+        <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+            <div class="text-brand-cyan text-3xl mb-4">⚡</div>
+            <h3 class="font-bold text-lg text-white mb-2">Bajo Impacto en CPU</h3>
+            <p class="text-slate-400 text-sm">Optimización de procesos en segundo plano diseñada para no congelar la computadora.</p>
+        </div>
+        <div class="bg-brand-card p-6 rounded-xl border border-brand-border">
+            <div class="text-brand-cyan text-3xl mb-4">🔄</div>
+            <h3 class="font-bold text-lg text-white mb-2">Actualizaciones Continuas</h3>
+            <p class="text-slate-400 text-sm">Infraestructura preparada para la sincronización periódica de firmas en la nube.</p>
+        </div>
+    </section>
+
+    <!-- Sección Especial para el Proyecto de Economía -->
+    <section id="modelo" class="max-w-4xl mx-auto px-6 py-12 mb-12">
+        <div class="bg-slate-900/80 border border-brand-border p-8 rounded-2xl">
+            <h2 class="text-2xl font-bold text-white mb-4">Visión de Emprendimiento & Escalamiento</h2>
+            <div class="space-y-4 text-sm text-slate-300">
+                <p>
+                    <strong class="text-brand-cyan">Fase 1 (MVP):</strong> Lanzamiento con bajo CAPEX utilizando motores de firmas consolidados para validar el mercado y construir base de usuarios.
+                </p>
+                <p>
+                    <strong class="text-brand-cyan">Fase 2 (Monetización):</strong> Modelo de suscripción B2B (Licencias Empresariales) para financiar el despliegue de infraestructura propia.
+                </p>
+                <p>
+                    <strong class="text-brand-cyan">Fase 3 (Autonomía):</strong> Transición hacia base de datos propietaria y analistas dedicados a inteligencia de amenazas en tiempo real.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script de interactividad -->
+    <script>
+        function runScan() {
+            const btn = document.getElementById('start-btn');
+            const progressBar = document.getElementById('progress-bar');
+            const filesCount = document.getElementById('files-count');
+            const status = document.getElementById('scan-status');
+            
+            btn.disabled = true;
+            btn.innerText = "Escaneando en segundo plano...";
+            btn.classList.add('opacity-50');
+            
+            status.innerText = "Escaneo en curso...";
+            status.className = "bg-brand-cyan/10 text-brand-cyan text-xs px-3 py-1 rounded-full border border-brand-cyan/30 font-medium";
+
+            let progress = 0;
+            let files = 0;
+
+            const interval = setInterval(() => {
+                progress += 5;
+                files += 142;
+
+                progressBar.style.width = progress + '%';
+                filesCount.innerText = files.toLocaleString();
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    btn.disabled = false;
+                    btn.innerText = "Iniciar Escaneo Simulado";
+                    btn.classList.remove('opacity-50');
+                    
+                    status.innerText = "Sistema Limpio y Seguro";
+                    status.className = "bg-brand-green/10 text-brand-green text-xs px-3 py-1 rounded-full border border-brand-green/30 font-medium";
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>
