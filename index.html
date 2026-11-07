@@ -128,97 +128,149 @@
 <section id="pricing" class="py-16 bg-slate-900 border-t border-slate-800 text-white">
   <div class="max-w-6xl mx-auto px-4">
     
-    <!-- Encabezado de la sección -->
-    <div class="text-center mb-12">
-      <span class="text-cyan-400 font-semibold text-sm uppercase tracking-wider">Modelos de Licenciamiento</span>
-      <h2 class="text-3xl font-bold mt-2">Planes de Protección B2B</h2>
-      <p class="text-slate-400 mt-2 max-w-2xl mx-auto">
-        Seguridad avanzada EDR adaptada al tamaño y volumen de infraestructura de tu empresa.
-      </p>
-    </div>
+  <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptix Antivirus - Seguridad EDR para Startups</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#001F2E] text-[#CCEBFA] font-sans antialiased">
 
-    <!-- Contenedor de Tarjetas de Precios -->
-    <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
-      
-      <!-- Plan PyME / Pymes -->
-      <div class="bg-slate-800/80 border border-slate-700 rounded-2xl p-8 flex flex-col justify-between hover:border-slate-600 transition-all">
-        <div>
-          <span class="text-cyan-400 font-medium text-xs uppercase tracking-widest bg-cyan-950/60 border border-cyan-800/50 px-3 py-1 rounded-full">Empresas Medianas</span>
-          <h3 class="text-2xl font-bold mt-4">Plan PyME EDR</h3>
-          <p class="text-slate-400 text-sm mt-2">Protección esencial para endpoints y servidores de pequeñas y medianas empresas.</p>
-          
-          <div class="my-6">
-            <span class="text-4xl font-extrabold text-white">$499</span>
-            <span class="text-slate-400 text-sm font-medium"> MXN / mes</span>
-            <p class="text-xs text-cyan-400/80 mt-1">Hasta 15 endpoints incluidos</p>
-          </div>
-
-          <ul class="space-y-3 text-sm text-slate-300 mb-6">
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Detección de amenazas en tiempo real
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Consola de administración centralizada
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Reportes semanales de incidentes
-            </li>
-          </ul>
+    <!-- Navegación -->
+    <header class="border-b border-[#015C89]/50 bg-[#001F2E]/90 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-8 h-8 rounded-lg bg-[#029AE5] flex items-center justify-center font-bold text-[#001F2E]">C</div>
+                <span class="font-bold text-lg text-white tracking-wide">Cryptix</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6 text-sm text-[#67C2EF]">
+                <a href="#pricing" class="hover:text-white transition-colors">Planes</a>
+                <a href="#contact" class="hover:text-white transition-colors">Contacto</a>
+            </nav>
+            <a href="#pricing" class="bg-[#029AE5] hover:bg-[#67C2EF] text-[#001F2E] font-semibold px-4 py-2 rounded-xl text-sm transition-colors">
+                Ver Precios
+            </a>
         </div>
-        
-        <button class="w-full bg-slate-700 hover:bg-slate-600 text-white font-medium py-3 rounded-xl transition-colors">
-          Solicitar Demostración
-        </button>
-      </div>
+    </header>
 
-      <!-- Plan Enterprise / Corporativo -->
-      <div class="bg-slate-800/90 border-2 border-cyan-500 rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-cyan-950/40">
-        <div class="absolute -top-3.5 right-6 bg-cyan-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-          Recomendado
-        </div>
+    <main>
+        <!-- Sección Hero / Presentación -->
+        <section class="py-20 text-center px-4 max-w-4xl mx-auto">
+            <span class="inline-block bg-[#015C89]/50 border border-[#67C2EF]/30 text-[#67C2EF] text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-widest mb-4">
+                Protección EDR de Nueva Generación
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight">
+                Ciberseguridad Inteligente para <span class="text-[#029AE5]">Startups y PyMEs</span>
+            </h1>
+            <p class="mt-4 text-lg text-[#67C2EF] max-w-2xl mx-auto">
+                Blindaje automatizado contra malware y ransomware adaptado a la economía de las empresas que están creciendo.
+            </p>
+        </section>
 
-        <div>
-          <span class="text-cyan-400 font-medium text-xs uppercase tracking-widest bg-cyan-950/60 border border-cyan-800/50 px-3 py-1 rounded-full">Corporativo</span>
-          <h3 class="text-2xl font-bold mt-4">Plan Enterprise</h3>
-          <p class="text-slate-400 text-sm mt-2">Respuesta automatizada a incidentes e integración completa con centros de operaciones.</p>
-          
-          <div class="my-6">
-            <span class="text-4xl font-extrabold text-white">$1,500</span>
-            <span class="text-slate-400 text-sm font-medium"> MXN / mes</span>
-            <p class="text-xs text-cyan-400/80 mt-1">Endpoints e infraestructura ilimitados</p>
-          </div>
+        <!-- Sección de Suscripción B2B (2 Columnas: Mensual vs Anual) -->
+        <section id="pricing" class="py-16 px-4 max-w-6xl mx-auto">
+            
+            <div class="text-center mb-12">
+                <span class="text-[#67C2EF] font-semibold text-sm uppercase tracking-wider">Licenciamiento B2B</span>
+                <h2 class="text-3xl font-bold text-white mt-2">Suscripciones Diseñadas para tu Negocio</h2>
+                <p class="text-[#67C2EF] mt-2 max-w-xl mx-auto">
+                    Elige la modalidad de pago que mejor se adapte al flujo de caja de tu empresa.
+                </p>
+            </div>
 
-          <ul class="space-y-3 text-sm text-slate-300 mb-6">
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Todo lo incluido en el Plan PyME
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Análisis heurístico por IA
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Integración SIEM / SOC
-            </li>
-            <li class="flex items-center gap-2">
-              <svg class="w-4 h-4 text-cyan-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-              Atención prioritaria 24/7
-            </li>
-          </ul>
-        </div>
+            <!-- Contenedor de 2 Tarjetas -->
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+                
+                <!-- Plan Mensual -->
+                <div class="bg-[#015C89]/20 border border-[#015C89] rounded-2xl p-8 flex flex-col justify-between hover:border-[#67C2EF] transition-all">
+                    <div>
+                        <span class="text-[#67C2EF] font-medium text-xs uppercase tracking-widest bg-[#015C89]/50 border border-[#67C2EF]/30 px-3 py-1 rounded-full">Flexibilidad</span>
+                        <h3 class="text-2xl font-bold text-white mt-4">Plan PyME Mensual</h3>
+                        <p class="text-[#67C2EF] text-sm mt-2">Pago mes a mes para mantener control sobre tu presupuesto.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-white">$349</span>
+                            <span class="text-[#67C2EF] text-sm font-medium"> MXN / mes</span>
+                            <p class="text-xs text-[#67C2EF]/80 mt-1">Hasta 5 endpoints incluidos</p>
+                        </div>
 
-        <button class="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white font-semibold py-3 rounded-xl transition-all shadow-lg shadow-cyan-500/25">
-          Contactar Ventas
-        </button>
-      </div>
+                        <ul class="space-y-3 text-sm text-[#CCEBFA] mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Detección de malware en tiempo real
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Actualizaciones de definiciones automáticas
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Soporte por correo y tickets
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <button class="w-full bg-[#015C89] hover:bg-[#029AE5] text-white font-medium py-3 rounded-xl transition-colors">
+                        Contratar Mensual
+                    </button>
+                </div>
 
-    </div>
-  </div>
-</section>
+                <!-- Plan Anual (Destacado) -->
+                <div class="bg-[#015C89]/40 border-2 border-[#029AE5] rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-[#001F2E]/50">
+                    <div class="absolute -top-3.5 right-6 bg-[#029AE5] text-[#001F2E] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                        Ahorra un 20%
+                    </div>
+
+                    <div>
+                        <span class="text-[#67C2EF] font-medium text-xs uppercase tracking-widest bg-[#015C89]/60 border border-[#67C2EF]/30 px-3 py-1 rounded-full">Recomendado</span>
+                        <h3 class="text-2xl font-bold text-white mt-4">Plan PyME Anual</h3>
+                        <p class="text-[#67C2EF] text-sm mt-2">La opción más rentable para asegurar la continuidad de tu empresa todo el año.</p>
+                        
+                        <div class="my-6">
+                            <span class="text-4xl font-extrabold text-white">$3,350</span>
+                            <span class="text-[#67C2EF] text-sm font-medium"> MXN / año</span>
+                            <p class="text-xs text-[#67C2EF]/80 mt-1">Hasta 10 endpoints incluidos</p>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-[#CCEBFA] mb-6">
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Todo lo incluido en el plan mensual
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Análisis heurístico avanzado de amenazas
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Consola de gestión centralizada
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                                Soporte técnico prioritario 24/7
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button class="w-full bg-[#029AE5] hover:bg-[#67C2EF] text-[#001F2E] font-bold py-3 rounded-xl transition-all shadow-lg">
+                        Contratar Anualidad
+                    </button>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer id="contact" class="border-t border-[#015C89]/50 py-8 text-center text-xs text-[#67C2EF]">
+        <p>&copy; 2026 Cryptix Antivirus. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
 
     <!-- Sección Especial para el Proyecto de Economía -->
     <section id="modelo" class="max-w-4xl mx-auto px-6 py-12 mb-12">
