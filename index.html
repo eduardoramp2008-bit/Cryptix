@@ -26,23 +26,41 @@
 </head>
 <body class="bg-brand-dark text-slate-100 font-sans antialiased">
 
-    <!-- Navegación -->
-    <nav class="flex justify-between items-center px-8 py-5 border-b border-brand-border bg-brand-dark/80 backdrop-blur sticky top-0 z-50">
-        <div class="flex items-center space-x-3">
-            <div class="flex items-center space-x-3">
-    <a href="#">
-        <img src="cryptix" alt="Cryptix Antivirus logo, a modern cybersecurity brand mark with the word Cryptix Antivirus in blue and cyan lettering, displayed as a static company emblem in a dark, professional navigation bar. The visual tone is clean, trustworthy, and focused on digital protection." class="h-[70px] w-auto object-contain">
-    </a>
-</div>
-        </div>
-        <div class="space-x-6 text-sm text-slate-300 hidden md:flex items-center">
-            <a href="#inicio" class="hover:text-brand-cyan transition">Inicio</a>
-            <a href="#caracteristicas" class="hover:text-brand-cyan transition">Características</a>
-            <a href="#simulador" class="hover:text-brand-cyan transition">Simulador</a>
-            <a href="#modelo" class="hover:text-brand-cyan transition">Modelo de Negocio</a>
-            <button class="bg-brand-cyan hover:bg-cyan-400 text-brand-dark font-semibold px-4 py-2 rounded-lg transition">Descargar MVP</button>
-        </div>
-    </nav>
+   <!-- Encabezado Limpio -->
+<header class="border-b border-[#015C89]/50 bg-[#001F2E]/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+        
+        <!-- Logo con la imagen -->
+        <a href="#" class="flex items-center">
+            <img src="logo.png" alt="Cryptix Logo" class="h-[130px] w-auto">  
+        </a>
+
+        <!-- Menú de Navegación -->
+        <nav class="hidden md:flex items-center gap-6 text-sm text-[#67C2EF]">
+            <a href="#pricing" class="hover:text-white transition-colors">Planes</a>
+            <a href="#contact" class="hover:text-white transition-colors">Contacto</a>
+        </nav>
+
+        <!-- Botón -->
+        <a href="#pricing" class="bg-[#029AE5] hover:bg-[#67C2EF] text-[#001F2E] font-semibold px-4 py-2 rounded-xl text-sm transition-colors">
+            Ver Precios
+        </a>
+    </div>
+</header>
+    
+    <!-- Navegación y Botón (igual que antes) -->
+    <div class="flex items-center gap-8">
+      <nav class="flex items-center gap-6 text-sm text-slate-300">
+        <a href="#" class="hover:text-white transition-colors">Características</a>
+        <a href="#" class="hover:text-white transition-colors">Precios</a>
+        <a href="#" class="hover:text-white transition-colors">Soporte</a>
+      </nav>
+      <a href="#" class="bg-cyan-600 hover:bg-cyan-500 text-white px-5 py-2.5 rounded-lg text-sm font-semibold transition-colors">
+        Probar Gratis
+      </a>
+    </div>
+  </div>
+</header>
 
     <!-- Sección Principal / Hero -->
     <section id="inicio" class="max-w-5xl mx-auto px-6 py-20 text-center">
