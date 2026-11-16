@@ -154,105 +154,84 @@
                 </p>
             </div>
 
-            <!-- Contenedor de 3 Tarjetas -->
-            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto items-stretch">
+            
 
-                <!-- Plan Gratuito -->
-            <div class="max-w-md mx-auto bg-slate-800 border border-slate-700 rounded-xl p-8 shadow-lg text-white">
-    <div class="text-center mb-6">
-        <h3 class="text-2xl font-bold text-sky-400 mb-2">Versión Gratuita</h3>
-        <div class="text-4xl font-extrabold">$0<span class="text-base text-slate-400 font-normal"> / siempre</span></div>
-    </div>
-    <ul class="space-y-3 mb-8 text-slate-300 text-sm">
-        <li class="flex items-center">✓ Escaneo básico de virus</li>
-        <li class="flex items-center">✓ Funciones esenciales de análisis</li>
-        <li class="flex items-center">✓ Interfaz ligera de alto rendimiento</li>
-        <li class="flex items-center">✓ Acceso a la comunidad y guías de uso</li>
-    </ul>
-    <a href="#download" class="block w-full text-center py-3 border-2 border-sky-400 text-sky-400 font-bold rounded-lg hover:bg-sky-400 hover:text-slate-900 transition-colors">
-        Descargar Gratis
-    </a>
-</div>
-                
-                <!-- Plan Mensual -->
-                <div class="bg-[#015C89]/20 border border-[#015C89] rounded-2xl p-8 flex flex-col justify-between hover:border-[#67C2EF] transition-all">
-                    <div>
-                        <span class="text-[#67C2EF] font-medium text-xs uppercase tracking-widest bg-[#015C89]/50 border border-[#67C2EF]/30 px-3 py-1 rounded-full">Flexibilidad</span>
-                        <h3 class="text-2xl font-bold text-white mt-4">Plan PyME Mensual</h3>
-                        <p class="text-[#67C2EF] text-sm mt-2">Pago mes a mes para mantener control sobre tu presupuesto.</p>
-                        
-                        <div class="my-6">
-                            <span class="text-4xl font-extrabold text-white">$349</span>
-                            <span class="text-[#67C2EF] text-sm font-medium"> MXN / mes</span>
-                            <p class="text-xs text-[#67C2EF]/80 mt-1">Hasta 5 endpoints incluidos</p>
-                        </div>
-
-                        <ul class="space-y-3 text-sm text-[#CCEBFA] mb-6">
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Detección de malware en tiempo real
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Actualizaciones de definiciones automáticas
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Soporte por correo y tickets
-                            </li>
-                        </ul>
-                    </div>
-                    
-                    <button class="w-full bg-[#015C89] hover:bg-[#029AE5] text-white font-medium py-3 rounded-xl transition-colors">
-                        Contratar Mensual
-                    </button>
+    <!-- Contenedor general en cuadrícula de 3 columnas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+        
+        <!-- 1. Versión Gratuita -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="text-center mb-6">
+                    <h3 class="text-2xl font-bold text-sky-400 mb-2">Versión Gratuita</h3>
+                    <div class="text-4xl font-extrabold text-white">$0<span class="text-sm text-slate-400 font-normal"> / siempre</span></div>
                 </div>
-
-                <!-- Plan Anual (Destacado) -->
-                <div class="bg-[#015C89]/40 border-2 border-[#029AE5] rounded-2xl p-8 flex flex-col justify-between relative shadow-xl shadow-[#001F2E]/50">
-                    <div class="absolute -top-3.5 right-6 bg-[#029AE5] text-[#001F2E] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-                        Ahorra un 20%
-                    </div>
-
-                    <div>
-                        <span class="text-[#67C2EF] font-medium text-xs uppercase tracking-widest bg-[#015C89]/60 border border-[#67C2EF]/30 px-3 py-1 rounded-full">Recomendado</span>
-                        <h3 class="text-2xl font-bold text-white mt-4">Plan PyME Anual</h3>
-                        <p class="text-[#67C2EF] text-sm mt-2">La opción más rentable para asegurar la continuidad de tu empresa todo el año.</p>
-                        
-                        <div class="my-6">
-                            <span class="text-4xl font-extrabold text-white">$3,350</span>
-                            <span class="text-[#67C2EF] text-sm font-medium"> MXN / año</span>
-                            <p class="text-xs text-[#67C2EF]/80 mt-1">Hasta 10 endpoints incluidos</p>
-                        </div>
-
-                        <ul class="space-y-3 text-sm text-[#CCEBFA] mb-6">
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Todo lo incluido en el plan mensual
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Análisis heurístico avanzado de amenazas
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Consola de gestión centralizada
-                            </li>
-                            <li class="flex items-center gap-2">
-                                <svg class="w-4 h-4 text-[#029AE5] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                                Soporte técnico prioritario 24/7
-                            </li>
-                        </ul>
-                    </div>
-
-                    <button class="w-full bg-[#029AE5] hover:bg-[#67C2EF] text-[#001F2E] font-bold py-3 rounded-xl transition-all shadow-lg">
-                        Contratar Anualidad
-                    </button>
-                </div>
-
+                <ul class="space-y-3 mb-8 text-slate-300 text-sm">
+                    <li class="flex items-center">✓ Escaneo básico de virus</li>
+                    <li class="flex items-center">✓ Funciones esenciales de análisis</li>
+                    <li class="flex items-center">✓ Interfaz ligera de alto rendimiento</li>
+                    <li class="flex items-center">✓ Acceso a la comunidad y guías de uso</li>
+                </ul>
             </div>
-        </section>
-    </main>
+            <a href="#download" class="block w-full text-center py-3 border-2 border-sky-400 text-sky-400 font-bold rounded-xl hover:bg-sky-400 hover:text-slate-900 transition-colors">
+                Descargar Gratis
+            </a>
+        </div>
+
+        <!-- 2. Plan PyME Mensual -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-8 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="mb-4">
+                    <span class="inline-block bg-sky-950 text-sky-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-2">Flexibilidad</span>
+                    <h3 class="text-2xl font-bold text-white">Plan PyME Mensual</h3>
+                    <p class="text-slate-400 text-sm mt-1">Pago mes a mes para mantener control sobre tu presupuesto.</p>
+                </div>
+                <div class="my-6">
+                    <div class="text-4xl font-extrabold text-white">$349 <span class="text-sm font-normal text-slate-400">MXN / mes</span></div>
+                    <div class="text-xs text-sky-400 mt-1">Hasta 5 endpoints incluidos</div>
+                </div>
+                <ul class="space-y-3 mb-8 text-slate-300 text-sm">
+                    <li class="flex items-center">✓ Detección de malware en tiempo real</li>
+                    <li class="flex items-center">✓ Actualizaciones de definiciones automáticas</li>
+                    <li class="flex items-center">✓ Soporte por correo y tickets</li>
+                </ul>
+            </div>
+            <a href="#contratar" class="block w-full text-center py-3 bg-sky-600 text-white font-bold rounded-xl hover:bg-sky-500 transition-colors">
+                Contratar Mensual
+            </a>
+        </div>
+
+        <!-- 3. Plan PyME Anual (Destacado) -->
+        <div class="bg-slate-900 border-2 border-sky-500 rounded-2xl p-8 shadow-2xl flex flex-col justify-between relative">
+            <div class="absolute -top-3 right-6">
+                <span class="bg-sky-500 text-slate-950 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">Ahorra un 20%</span>
+            </div>
+            <div>
+                <div class="mb-4">
+                    <span class="inline-block bg-sky-950 text-sky-400 text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-2">Recomendado</span>
+                    <h3 class="text-2xl font-bold text-white">Plan PyME Anual</h3>
+                    <p class="text-slate-400 text-sm mt-1">La opción más rentable para asegurar la continuidad de tu empresa todo el año.</p>
+                </div>
+                <div class="my-6">
+                    <div class="text-4xl font-extrabold text-white">$3,350 <span class="text-sm font-normal text-slate-400">MXN / año</span></div>
+                    <div class="text-xs text-sky-400 mt-1">Hasta 10 endpoints incluidos</div>
+                </div>
+                <ul class="space-y-3 mb-8 text-slate-300 text-sm">
+                    <li class="flex items-center">✓ Todo lo incluido en el plan mensual</li>
+                    <li class="flex items-center">✓ Análisis heurístico avanzado de amenazas</li>
+                    <li class="flex items-center">✓ Consola de gestión centralizada</li>
+                    <li class="flex items-center">✓ Soporte técnico prioritario 24/7</li>
+                </ul>
+            </div>
+            <a href="#contratar-anual" class="block w-full text-center py-3 bg-sky-500 text-slate-950 font-bold rounded-xl hover:bg-sky-400 transition-colors">
+                Contratar Anual
+            </a>
+        </div>
+
+    </div>
+</section>
+                
+  
 
     <!-- Pie de página -->
     <footer id="contact" class="border-t border-[#015C89]/50 py-8 text-center text-xs text-[#67C2EF]">
